@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Asian Women in the Law – Mentorship Program (SAWLMP)</title>
+  <meta name="description" content="SAWLMP provides targeted and concrete mentorship opportunities for South Asian women in the legal profession in Canada.">
+  <meta property="og:title" content="South Asian Women in the Law (SAWLMP)">
+  <meta property="og:description" content="Targeted mentorship, representation, and community for South Asian women in law.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e1b4b;
+      --primary-light: #2e266d;
+      --accent: #b45309;
+      --accent-warm: #d97706;
+      --gold: #f59e0b;
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --text: #1c1917;
+      --text-muted: #57534e;
+      --border: #e7e5e4;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1.1rem 0;
+    }
+    .brand-group {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+    .brand-sub {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+      white-space: nowrap;
+    }
+    nav a:hover { color: var(--primary); }
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1.1rem;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: var(--primary-light); }
+    
+    /* Hero */
+    .hero {
+      padding: 5.5rem 0 4rem;
+      background: linear-gradient(180deg, #ffffff 0%, #fafaf9 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.35rem, 5vw, 3.75rem);
+      line-height: 1.15;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      text-wrap: balance;
+    }
+    .hero-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      max-width: 820px;
+      border-left: 3px solid var(--gold);
+      padding-left: 1.25rem;
+    }
+    .hero-p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 820px;
+      margin-bottom: 2rem;
+      line-height: 1.75;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.8rem 1.6rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: #f5f5f4;
+    }
+    
+    /* Section */
+    .section {
+      padding: 5rem 0;
+    }
+    .section-light {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header {
+      margin-bottom: 3rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.15rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 650px;
+    }
+
+    /* Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.75rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .check-list li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .check-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    /* Media Box */
+    .audio-box {
+      background: #f5f5f4;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+    .audio-title {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .audio-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Forms */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .form-control {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      background: #fff;
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #e0e7ff;
+      padding: 4rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .footer-p {
+      font-size: 0.9rem;
+      color: #c7d2fe;
+      line-height: 1.6;
+      max-width: 440px;
+    }
+    .footer-heading {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .footer-links a {
+      color: #c7d2fe;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.15s ease;
+    }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: #a5b4fc;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      nav { flex-wrap: wrap; }
+      .form-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 3.5rem 0 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="brand-group">
+        <span class="brand-title">SOUTH ASIAN WOMEN IN THE LAW</span>
+        <span class="brand-sub">MENTORSHIP PROGRAM · SAWLMP</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#details">Program Details</a>
+        <a href="#intake">Apply (Mentor / Mentee)</a>
+        <a href="#media">CHIN Radio & Press</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div>
+        <a href="#intake" class="header-cta">Intake Forms</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <span class="kicker">South Asian Women in the Law · Mentorship Program</span>
+      <h1 class="hero-title">Shifting the Narrative for Racialized Women in Law</h1>
+      <p class="hero-quote">
+        "Through sharing your experiences both positive and negative, you are not only reclaiming your own voice and seat at the table, but also supporting other women by pulling out a chair for them."
+      </p>
+      <p class="hero-p">
+        The objective of this program is to provide targeted, concrete mentorship opportunities that account for two crucial identity factors: <strong>gender and ethnicity</strong>. Studies demonstrate that gender and ethnicity create unique power dynamics, challenges, and opportunities that racialized licensees encounter upon entering the legal profession.
+      </p>
+      <div class="btn-group">
+        <a href="#intake" class="btn btn-primary">Submit Mentor / Mentee Intake</a>
+        <a href="#details" class="btn btn-secondary">Explore Program Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Objectives -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Mission & Safe Space</h2>
+        <p class="section-subtitle">
+          Founded in Canada by lawyer Naiyna Sharma to provide direct, identity-conscious mentorship across courts, firms, and legal organizations.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3 class="card-title">A Safe, Tailored Space</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            This program pairs racialized licensees with Mentors in the legal profession who share similar identity factors in order to afford access to a richer mentorship relationship.
+          </p>
+          <ul class="check-list">
+            <li>Discuss barriers encountered in career development openly and confidentially</li>
+            <li>Acquire real strategies to overcome obstacles and advance in your legal practice</li>
+            <li>Foster confidence and step fully into your professional power</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">The Fundamentals of Mentoring</h3>
+          <ul class="check-list">
+            <li><strong>Voluntary:</strong> Driven by passion and peer community support</li>
+            <li><strong>Confidential:</strong> A private, honest space to address challenges</li>
+            <li><strong>Reciprocal Learning:</strong> An opportunity to hone leadership, coaching, and perspective</li>
+            <li><strong>Mutually Beneficial:</strong> Enhancing effectiveness across all stages of the legal journey</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Details -->
+  <section id="details" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How Placements Work</h2>
+        <p class="section-subtitle">
+          Placements are made on a rolling basis. Pairs are matched by practice area, common interests, and tailored mentee goals.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3 class="card-title">For Mentors</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+            Mentors coach, provide constructive feedback, and share lived experiences navigating firms, courts, and companies as racialized women lawyers.
+          </p>
+          <ul class="check-list">
+            <li>Encourage mentees to build confidence and navigate challenges</li>
+            <li>Provide timely counsel and career guidance</li>
+            <li>Support fellow women while expanding your own leadership perspective</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">For Mentees</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+            Mentees initiate contact once matched. Pairs receive guiding questions and an optional sample mentoring agreement.
+          </p>
+          <ul class="check-list">
+            <li>Receive email notification with contact info & shared background highlights</li>
+            <li>Check-ins conducted at the half-way mark and closing feedback point</li>
+            <li>Open to law students, licensing candidates, and practicing lawyers/paralegals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIN Radio & Press -->
+  <section id="media" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Media, Interviews & Partnerships</h2>
+        <p class="section-subtitle">
+          Coverage of SAWLMP's initiatives across broadcast radio, student organizations, and legal recruitment networks.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h3 class="card-title">CHIN Radio Broadcast Interview</h3>
+        <p class="audio-desc">
+          Interview on CHIN Radio with SAWLMP Director, <strong>Naiyna Sharma</strong>, highlighting the vision behind South Asian Women in the Law and the urgent need for targeted mentorship.
+        </p>
+        <div class="audio-box">
+          <audio controls style="width: 100%;">
+            <source src="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+          </audio>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3 class="card-title">UOttawa SALSA Collaboration</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Partnership with the University of Ottawa South Asian Law Students Association (SALSA) to provide law students with direct mentoring connections and professional development events.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">The Counsel Network</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Collaborating to spotlight career opportunities, recruitment best practices, and equitable advancement for diverse legal talent across Canada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intake Forms -->
+  <section id="intake" class="section section-light">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header text-center">
+        <h2 class="section-title">Intake & Application Form</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Whether you would like to volunteer as a Mentor or join as a Mentee, submit your details below to join our active registry.
+        </p>
+      </div>
+
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your intake request has been prepared. On your live site, this submits directly to southasianwomeninthelaw@gmail.com.');">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" required class="form-control" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" required class="form-control" placeholder="you@email.com">
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>I am applying as:</label>
+              <select class="form-control" required>
+                <option value="mentee">Mentee (Law Student / Licensing Candidate / Early Career)</option>
+                <option value="mentor">Mentor (Practicing Lawyer / Paralegal / In-House / Bencher)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Practice Area / Area of Interest</label>
+              <input type="text" required class="form-control" placeholder="e.g. Litigation, Corporate, Family, Tech, Public">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label>City & Province</label>
+            <input type="text" class="form-control" placeholder="e.g. Toronto, ON / Vancouver, BC / Ottawa, ON">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label>What are your goals or how can SAWLMP best support you?</label>
+            <textarea rows="4" class="form-control" placeholder="Briefly describe your background, career goals, or the type of guidance you seek/offer..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            Submit Intake Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container text-center" style="max-width: 650px;">
+      <h2 class="section-title">We Want to Hear From You</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.75rem;">
+        Have questions about the program, partnering with SAWLMP, or being featured on our <strong>#ChaiChatLaw</strong> virtual series? Get in touch directly:
+      </p>
+      <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+        <a href="mailto:southasianwomeninthelaw@gmail.com" style="color: var(--accent); font-weight: 700; text-decoration: none;">
+          southasianwomeninthelaw@gmail.com
+        </a>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1.5rem; font-weight: 600;">
+        <a href="https://instagram.com/sawlmp" target="_blank" rel="noopener" style="color: var(--primary);">Instagram @sawlmp</a>
+        <a href="https://twitter.com/sawlmp1" target="_blank" rel="noopener" style="color: var(--primary);">Twitter @sawlmp1</a>
+        <a href="https://facebook.com/sawlmp" target="_blank" rel="noopener" style="color: var(--primary);">Facebook @sawlmp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">South Asian Women in the Law</div>
+          <p class="footer-p">
+            Mentorship Program (SAWLMP). Supporting, connecting, and empowering South Asian women in the legal profession across Canada.
+          </p>
+        </div>
+        <div>
+          <div class="footer-heading">Initiatives</div>
+          <ul class="footer-links">
+            <li><a href="#about">About SAWLMP</a></li>
+            <li><a href="#details">Program Details</a></li>
+            <li><a href="#media">CHIN Radio Interview</a></li>
+            <li><a href="#intake">Intake Applications</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Community & Partners</div>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com/sawlmp" target="_blank">Instagram (@sawlmp)</a></li>
+            <li><a href="https://twitter.com/sawlmp1" target="_blank">Twitter (@sawlmp1)</a></li>
+            <li><a href="mailto:southasianwomeninthelaw@gmail.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 South Asian Women in the Law (SAWLMP).
+        </div>
+        <div>
+          Connected to GoDaddy domain <strong>sawlmp.com</strong> · Free GitHub Pages Hosting
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
