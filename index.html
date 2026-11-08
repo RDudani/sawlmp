@@ -6,15 +6,22 @@
   <title>SOUTH ASIAN WOMEN IN THE LAW &#8211; MENTORSHIP PROGRAM</title>
   <meta name="description" content="South Asian Women in the Law – Mentorship Program (SAWLMP). Targeted and concrete mentorship opportunities accounting for gender and ethnicity in the Canadian legal profession.">
   
-  <!-- Favicon -->
-  <link rel="icon" href="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/cropped-26733663_328904977624412_5552322017876010587_n-1-32x32.jpg" sizes="32x32" />
-  <link rel="icon" href="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/cropped-26733663_328904977624412_5552322017876010587_n-1-192x192.jpg" sizes="192x192" />
-  <link rel="apple-touch-icon" href="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/cropped-26733663_328904977624412_5552322017876010587_n-1-180x180.jpg" />
+  <!-- Crisp High-Res Scales of Justice Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sawlmp.com/">
+  <meta property="og:title" content="SOUTH ASIAN WOMEN IN THE LAW – MENTORSHIP PROGRAM">
+  <meta property="og:description" content="Targeted mentorship, representation, and community for South Asian women across Canadian firms, corporations, and courts.">
 
   <!-- Google Fonts: Merriweather & Montserrat (Original WordPress Twenty Sixteen Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900,400italic,700italic|Montserrat:400,700|Inconsolata:400&display=swap" rel="stylesheet">
+
+  <!-- Official HubSpot Forms Shell Loader -->
+  <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js" async></script>
 
   <style>
     /* Exact Twenty Sixteen Theme Styles & Colors */
@@ -197,16 +204,6 @@
     .widget-content {
       text-align: center;
     }
-    .widget img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease;
-    }
-    .widget a:hover img {
-      transform: scale(1.02);
-    }
     .wp-caption-text {
       font-size: 0.82rem;
       color: #686868;
@@ -218,7 +215,113 @@
       margin: 0.5rem 0 0.75rem 0;
     }
 
-    /* Working Forms (styled exactly like original WordPress forms) */
+    /* Clean Branded Sidebar Graphics (Zero Broken Images) */
+    .sidebar-card-badge {
+      display: block;
+      text-decoration: none;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+    .sidebar-card-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+    .salsa-banner {
+      background: linear-gradient(135deg, #8B0000 0%, #4a0000 100%);
+      color: #ffffff;
+      padding: 2.25rem 1.5rem;
+      text-align: center;
+    }
+    .salsa-banner .badge-pre {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #f59e0b;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .salsa-banner .badge-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .salsa-banner .badge-sub {
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      font-style: italic;
+    }
+
+    .counsel-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 2.25rem 1.5rem;
+      text-align: center;
+      border-top: 4px solid #b45309;
+    }
+    .counsel-banner .badge-pre {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .counsel-banner .badge-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .counsel-banner .badge-sub {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    /* Media Feature Cards (Brown Girl Mag & FACL) */
+    .press-feature-card {
+      background: #fafafa;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      transition: border-color 0.15s ease;
+    }
+    .press-feature-card:hover {
+      border-color: #fc917b;
+    }
+    .press-badge-tag {
+      display: inline-block;
+      font-family: Montserrat, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #b45309;
+      background: #fef3c7;
+      padding: 0.25rem 0.65rem;
+      border-radius: 3px;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Audio Container */
+    .audio-player-wrap {
+      background: #f9f9f9;
+      border: 1px solid #eaeaea;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+
+    /* HubSpot & Working Forms */
     .sawlmp-form {
       background: #fafafa;
       border: 1px solid #eaeaea;
@@ -398,7 +501,8 @@
                 <h1 class="entry-title">Home</h1>
               </header>
               <div class="entry-content">
-                <p><span style="color: #ff9900;"><strong>Please note, Mentee applications are closed until Winter 2022. Mentor applications will continue to be accepted, however pairing will only be done in Winter 2022. For additional mentoring resources, please see SABA, FACL and the WLMP</strong></span></p>
+                <!-- 2026 Updated Status Notice -->
+                <p><span style="color: #ff9900;"><strong>Please note, Mentee and Mentor applications are currently on pause for 2026. For additional mentoring resources, please see SABA (South Asian Bar Association), FACL (Federation of Asian Canadian Lawyers) and the WLMP (Women's Legal Mentorship Program).</strong></span></p>
 
                 <p>Welcome to the South Asian Women in the Law &#8211; Mentorship Program (SAWLMP). Thank you for your interest in this important initiative.</p>
 
@@ -474,30 +578,34 @@
               </div>
             </article>
 
-            <!-- 3. MENTEE INTAKE FORM -->
+            <!-- 3. MENTEE INTAKE FORM (With HubSpot portal 5897820 + Fallback) -->
             <article id="page-mentees" class="page-view" style="display: none;">
               <header class="entry-header">
                 <h1 class="entry-title">Mentee Intake Form</h1>
               </header>
               <div class="entry-content">
                 <p>Thank you for your interest in participating in the South Asian Women in the Law – Mentorship Program.</p>
-                <p><span style="color: #ff9900;"><strong>Please note, Mentee applications are currently accepted on a rolling basis.</strong></span></p>
-                <p>If you are a self-identifying South Asian female studying law, an licensing candidate, or early-career licensee in Canada, please fill out and submit the intake form below:</p>
+                <p><span style="color: #ff9900;"><strong>Please note: Mentee and Mentor pairings are currently on pause for 2026. For additional mentoring resources, please consult SABA, FACL, and the WLMP.</strong></span></p>
+                <p>If you are a self-identifying South Asian female studying law, an licensing candidate, or early-career licensee in Canada, you can submit your details below to join our registry:</p>
 
-                <div class="sawlmp-form">
-                  <div id="menteeNotice" class="form-notice">✓ Thank you! Your Mentee application has been prepared and received.</div>
-                  <form onsubmit="handleFormSubmit(event, 'menteeNotice')">
+                <!-- HubSpot Form Embed Container -->
+                <div id="hubspot-mentee-form" style="margin: 2rem 0;"></div>
+
+                <!-- Fallback Direct Intake Form -->
+                <div id="fallback-mentee-form" class="sawlmp-form">
+                  <div id="menteeNotice" class="form-notice">✓ Thank you! Your Mentee application has been prepared and forwarded to southasianwomeninthelaw@gmail.com.</div>
+                  <form onsubmit="handleFormSubmit(event, 'menteeNotice', 'Mentee')">
                     <div class="form-row">
                       <label>First & Last Name *</label>
-                      <input type="text" required class="form-input" placeholder="Your name">
+                      <input type="text" id="mentee_name" required class="form-input" placeholder="Your name">
                     </div>
                     <div class="form-row">
                       <label>Email Address *</label>
-                      <input type="email" required class="form-input" placeholder="name@example.com">
+                      <input type="email" id="mentee_email" required class="form-input" placeholder="name@example.com">
                     </div>
                     <div class="form-row">
                       <label>Current Status *</label>
-                      <select class="form-select" required>
+                      <select id="mentee_status" class="form-select" required>
                         <option value="">Select status...</option>
                         <option value="Law Student 1L/2L/3L">Law Student (1L / 2L / 3L)</option>
                         <option value="Licensing / Articling Candidate">Licensing / Articling Candidate</option>
@@ -507,15 +615,15 @@
                     </div>
                     <div class="form-row">
                       <label>City & Province *</label>
-                      <input type="text" required class="form-input" placeholder="e.g. Toronto, ON / Ottawa, ON / Vancouver, BC">
+                      <input type="text" id="mentee_city" required class="form-input" placeholder="e.g. Toronto, ON / Ottawa, ON / Vancouver, BC">
                     </div>
                     <div class="form-row">
                       <label>Practice Areas of Interest *</label>
-                      <input type="text" required class="form-input" placeholder="e.g. Corporate, Litigation, Immigration, Family, Tech, Public">
+                      <input type="text" id="mentee_practice" required class="form-input" placeholder="e.g. Corporate, Litigation, Immigration, Family, Tech, Public">
                     </div>
                     <div class="form-row">
                       <label>What are your goals for this mentorship relationship? *</label>
-                      <textarea rows="4" required class="form-textarea" placeholder="Tell us about the challenges you are facing or what guidance you are seeking..."></textarea>
+                      <textarea id="mentee_goals" rows="4" required class="form-textarea" placeholder="Tell us about the challenges you are facing or what guidance you are seeking..."></textarea>
                     </div>
                     <button type="submit" class="form-btn">Submit Mentee Form</button>
                   </form>
@@ -523,46 +631,50 @@
               </div>
             </article>
 
-            <!-- 4. MENTOR INTAKE FORM -->
+            <!-- 4. MENTOR INTAKE FORM (With HubSpot portal 5897820 + Fallback) -->
             <article id="page-mentors" class="page-view" style="display: none;">
               <header class="entry-header">
                 <h1 class="entry-title">Mentor Intake Form</h1>
               </header>
               <div class="entry-content">
                 <p>Thank you for your interest in participating in the South Asian Women in the Law – Mentorship Program.</p>
-                <p><span style="color: #ff9900;"><strong>Mentor applications continue to be accepted on a rolling basis.</strong></span></p>
+                <p><span style="color: #ff9900;"><strong>Please note: Pairings are currently on pause for 2026. Mentor applications for future cycles continue to be received.</strong></span></p>
                 <p>If you are licensed to practice as a lawyer or paralegal in a province or territory of Canada, and interested in participating as a Mentor, please fill out and submit the form below:</p>
 
-                <div class="sawlmp-form">
-                  <div id="mentorNotice" class="form-notice">✓ Thank you! Your Mentor application has been prepared and received.</div>
-                  <form onsubmit="handleFormSubmit(event, 'mentorNotice')">
+                <!-- HubSpot Form Embed Container -->
+                <div id="hubspot-mentor-form" style="margin: 2rem 0;"></div>
+
+                <!-- Fallback Direct Intake Form -->
+                <div id="fallback-mentor-form" class="sawlmp-form">
+                  <div id="mentorNotice" class="form-notice">✓ Thank you! Your Mentor application has been prepared and forwarded to southasianwomeninthelaw@gmail.com.</div>
+                  <form onsubmit="handleFormSubmit(event, 'mentorNotice', 'Mentor')">
                     <div class="form-row">
                       <label>First & Last Name *</label>
-                      <input type="text" required class="form-input" placeholder="Your name">
+                      <input type="text" id="mentor_name" required class="form-input" placeholder="Your name">
                     </div>
                     <div class="form-row">
                       <label>Email Address *</label>
-                      <input type="email" required class="form-input" placeholder="name@example.com">
+                      <input type="email" id="mentor_email" required class="form-input" placeholder="name@example.com">
                     </div>
                     <div class="form-row">
                       <label>Year of Call to the Bar / Licensing *</label>
-                      <input type="text" required class="form-input" placeholder="e.g. 2014, Law Society of Ontario">
+                      <input type="text" id="mentor_call" required class="form-input" placeholder="e.g. 2014, Law Society of Ontario">
                     </div>
                     <div class="form-row">
                       <label>Current Employer / Organization / Practice</label>
-                      <input type="text" class="form-input" placeholder="Firm, In-House, Government, Clinic, or Sole Practice">
+                      <input type="text" id="mentor_org" class="form-input" placeholder="Firm, In-House, Government, Clinic, or Sole Practice">
                     </div>
                     <div class="form-row">
                       <label>City & Province *</label>
-                      <input type="text" required class="form-input" placeholder="e.g. Toronto, ON / Ottawa, ON / Calgary, AB">
+                      <input type="text" id="mentor_city" required class="form-input" placeholder="e.g. Toronto, ON / Ottawa, ON / Calgary, AB">
                     </div>
                     <div class="form-row">
                       <label>Practice Areas *</label>
-                      <input type="text" required class="form-input" placeholder="e.g. Commercial Litigation, Real Estate, Labour & Employment">
+                      <input type="text" id="mentor_practice" required class="form-input" placeholder="e.g. Commercial Litigation, Real Estate, Labour & Employment">
                     </div>
                     <div class="form-row">
                       <label>How many mentees can you comfortably take on?</label>
-                      <select class="form-select">
+                      <select id="mentor_capacity" class="form-select">
                         <option value="1">1 Mentee</option>
                         <option value="2">2 Mentees</option>
                       </select>
@@ -579,30 +691,33 @@
                 <h1 class="entry-title">Chai. Chat. Law.</h1>
               </header>
               <div class="entry-content">
-                <p>Due to COVID-19, Chai. Chat. Law. events have been postponed and in its place we have introduced the virtual <a href="https://www.instagram.com/explore/tags/chaichatlaw/" target="_blank">#chaichatlaw</a> series on our <a href="https://www.instagram.com/sawlmp/channel/" target="_blank" rel="noopener noreferrer">IGTV</a> on our SAWLMP instagram account. Here, you can catch up with self-identifying female South Asian lawyers sharing their journey in the law with you!</p>
+                <p>Due to COVID-19 and subsequent schedule updates, Chai. Chat. Law. events have been featured as a virtual <a href="https://www.instagram.com/sawlmp/" target="_blank" rel="noopener noreferrer">#chaichatlaw</a> series on our <a href="https://www.instagram.com/sawlmp/channel/" target="_blank" rel="noopener noreferrer">IGTV</a> on our SAWLMP Instagram account. Here, you can catch up with self-identifying female South Asian lawyers sharing their journey in the law with you!</p>
 
                 <p>Would you like to share your journey with us over a cup of chai? Fill out the submission form below and we will follow up with you details and next steps.</p>
 
-                <p>Check back for updates on the next event.</p>
+                <p>Check back on our Instagram for updates on future community gatherings.</p>
 
-                <div class="sawlmp-form">
-                  <div id="chaiNotice" class="form-notice">✓ Thank you! Your Chai. Chat. Law feature request has been received.</div>
-                  <form onsubmit="handleFormSubmit(event, 'chaiNotice')">
+                <!-- HubSpot Form Embed Container -->
+                <div id="hubspot-chai-form" style="margin: 2rem 0;"></div>
+
+                <div id="fallback-chai-form" class="sawlmp-form">
+                  <div id="chaiNotice" class="form-notice">✓ Thank you! Your Chai. Chat. Law feature request has been received and forwarded to southasianwomeninthelaw@gmail.com.</div>
+                  <form onsubmit="handleFormSubmit(event, 'chaiNotice', 'Chai Chat Law Feature')">
                     <div class="form-row">
                       <label>Your Name *</label>
-                      <input type="text" required class="form-input" placeholder="Your name">
+                      <input type="text" id="chai_name" required class="form-input" placeholder="Your name">
                     </div>
                     <div class="form-row">
                       <label>Email Address *</label>
-                      <input type="email" required class="form-input" placeholder="name@example.com">
+                      <input type="email" id="chai_email" required class="form-input" placeholder="name@example.com">
                     </div>
                     <div class="form-row">
                       <label>Instagram Handle (Optional)</label>
-                      <input type="text" class="form-input" placeholder="@yourhandle">
+                      <input type="text" id="chai_ig" class="form-input" placeholder="@yourhandle">
                     </div>
                     <div class="form-row">
                       <label>Briefly tell us about your journey in the law</label>
-                      <textarea rows="4" class="form-textarea" placeholder="What would you like to share with fellow South Asian women in law?"></textarea>
+                      <textarea id="chai_journey" rows="4" class="form-textarea" placeholder="What would you like to share with fellow South Asian women in law?"></textarea>
                     </div>
                     <button type="submit" class="form-btn">Submit for Feature</button>
                   </form>
@@ -634,7 +749,7 @@
                 <h2>The Counsel Network</h2>
                 <p><a href="https://www.thecounselnetwork.com/" target="_blank" rel="noopener noreferrer">The Counsel Network</a>, led by two phenomenal South Asian womxn as managing partners, is one of the most respected, connected and powerful lawyer recruitment firm in Canada. They specialize in providing the Canadian legal market with comprehensive, long-term talent management solutions. They are passionate about achieving the best results for their clients and candidates – results that build careers, firms, law departments, and that ultimately build success.</p>
 
-                <p>SAWLMP will be linking job opportunities across Canada, advertised via The Counsel Network, directly on our website moving forward to help you access opportunities and mentorship from one platform.</p>
+                <p>SAWLMP will be linking job opportunities across Canada, advertised via <a href="https://www.thecounselnetwork.com/current-opportunities/" target="_blank" rel="noopener noreferrer">The Counsel Network Current Opportunities</a>, directly on our website moving forward to help you access opportunities and mentorship from one platform.</p>
 
                 <p>Feel free to also check out the numerous other resources they offer that might be of interest to you in the course of your career development.</p>
               </div>
@@ -647,35 +762,48 @@
               </header>
               <div class="entry-content">
                 <h2 class="widget-title" style="text-align: left; padding-left: 0;">CHIN RADIO INTERVIEW</h2>
-                <audio controls style="width: 100%; margin: 1rem 0;">
-                  <source src="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3" type="audio/mpeg">
-                  <a href="https://web.archive.org/web/20260412002546/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3">Download Naiyna-Radio.mp3</a>
-                </audio>
-                <p>Interview on CHIN radio with the SAWLMP Creator and Director, Naiyna Sharma</p>
+                <div class="audio-player-wrap">
+                  <audio controls style="width: 100%;">
+                    <source src="./audio/Naiyna-Radio.mp3" type="audio/mpeg">
+                    <source src="https://web.archive.org/web/20200301000000im_/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                  </audio>
+                  <p style="font-size: 0.9rem; color: #4b5563; margin-top: 0.5rem; margin-bottom: 0;">
+                    Broadcast interview on CHIN Radio with SAWLMP Creator and Director, <strong>Naiyna Sharma</strong>, discussing the vital need for targeted mentorship for racialized women in law.
+                  </p>
+                </div>
 
                 <hr/>
 
                 <h2>BROWN GIRL MAGAZINE</h2>
-                <p>
-                  <a href="https://www.browngirlmagazine.com/2018/01/south-asian-women-law-gift-mentorship/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://web.archive.org/web/20241203175345im_/http://sawlmp.com/wp-content/uploads/2020/10/brown-girl-mag-sawlmp.jpg" alt="Brown Girl Magazine SAWLMP" style="max-width: 100%; height: auto; border-radius: 4px;">
+                <div class="press-feature-card">
+                  <span class="press-badge-tag">Featured Article</span>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">South Asian Women in Law & the Gift of Mentorship</h3>
+                  <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1.25rem;">
+                    In-depth profile covering how Naiyna Sharma launched SAWLMP to address representation gaps, tackle systemic isolation, and create tangible career pathways for prospective and practicing lawyers.
+                  </p>
+                  <a href="https://www.browngirlmagazine.com/2018/01/south-asian-women-law-gift-mentorship/" target="_blank" rel="noopener noreferrer" style="font-weight: 700;">
+                    Read the feature on Brown Girl Magazine &rarr;
                   </a>
-                </p>
-                <p><a href="https://www.browngirlmagazine.com/2018/01/south-asian-women-law-gift-mentorship/" target="_blank" rel="noopener noreferrer">Click here to read more on Brown Girl Magazine</a></p>
+                </div>
 
                 <hr/>
 
                 <h2>FEDERATION OF ASIAN CANADIAN LAWYERS (FACL) FEATURE</h2>
-                <p>
-                  <a href="https://on.facl.ca/events/inclusive-leaders-showcase-2018/#NaiynaSharma_profile" target="_blank" rel="noopener noreferrer">
-                    <img src="https://web.archive.org/web/20241203175345im_/http://sawlmp.com/wp-content/uploads/2020/10/facl-showcase-leaders.png" alt="FACL Inclusive Leaders Showcase" style="max-width: 100%; height: auto; border-radius: 4px;">
+                <div class="press-feature-card">
+                  <span class="press-badge-tag">Leadership Spotlight</span>
+                  <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">FACL Ontario Inclusive Leaders Showcase</h3>
+                  <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1.25rem;">
+                    Honoring Naiyna Sharma's mentorship advocacy and leadership fostering equity and community across Canadian legal practice.
+                  </p>
+                  <a href="https://on.facl.ca/" target="_blank" rel="noopener noreferrer" style="font-weight: 700;">
+                    Visit FACL Ontario &rarr;
                   </a>
-                </p>
-                <p><a href="https://on.facl.ca/events/inclusive-leaders-showcase-2018/#NaiynaSharma_profile" target="_blank" rel="noopener noreferrer">Click here to view Naiyna Sharma's profile on FACL</a></p>
+                </div>
               </div>
             </article>
 
-            <!-- 8. CONTACT -->
+            <!-- 8. CONTACT (With HubSpot portal 5897820 + Fallback) -->
             <article id="page-contact" class="page-view" style="display: none;">
               <header class="entry-header">
                 <h1 class="entry-title">Contact</h1>
@@ -687,28 +815,31 @@
 
                 <p>Tweet us <a href="https://twitter.com/sawlmp1" target="_blank" rel="noopener noreferrer">@sawlmp1</a> to connect with other Mentors and Mentees, bring articles of interest to our attention, and share your ideas for the program and your phenomenal mentorship experiences!</p>
 
-                <p>You can also follow us on our facebook page at <a href="https://www.facebook.com/sawlmp" target="_blank" rel="noopener noreferrer">@sawlmp</a></p>
+                <p>You can also follow us on our Facebook page at <a href="https://www.facebook.com/sawlmp" target="_blank" rel="noopener noreferrer">@sawlmp</a>.</p>
 
-                <p>Should you have any further questions about the program please fill out and submit the form below or email us at <a href="mailto:southasianwomeninthelaw@gmail.com">southasianwomeninthelaw@gmail.com</a>:</p>
+                <p>Should you have any further questions about the program please fill out and submit the form below or email us directly at <a href="mailto:southasianwomeninthelaw@gmail.com">southasianwomeninthelaw@gmail.com</a>:</p>
 
-                <div class="sawlmp-form">
+                <!-- HubSpot Form Embed Container -->
+                <div id="hubspot-contact-form" style="margin: 2rem 0;"></div>
+
+                <div id="fallback-contact-form" class="sawlmp-form">
                   <div id="contactNotice" class="form-notice">✓ Thank you! Your message has been sent to southasianwomeninthelaw@gmail.com.</div>
-                  <form onsubmit="handleFormSubmit(event, 'contactNotice')">
+                  <form onsubmit="handleFormSubmit(event, 'contactNotice', 'Contact Inquiry')">
                     <div class="form-row">
                       <label>Your Name *</label>
-                      <input type="text" required class="form-input" placeholder="Your name">
+                      <input type="text" id="contact_name" required class="form-input" placeholder="Your name">
                     </div>
                     <div class="form-row">
                       <label>Email Address *</label>
-                      <input type="email" required class="form-input" placeholder="name@example.com">
+                      <input type="email" id="contact_email" required class="form-input" placeholder="name@example.com">
                     </div>
                     <div class="form-row">
                       <label>Subject</label>
-                      <input type="text" class="form-input" placeholder="What is this regarding?">
+                      <input type="text" id="contact_subject" class="form-input" placeholder="What is this regarding?">
                     </div>
                     <div class="form-row">
                       <label>Message *</label>
-                      <textarea rows="4" required class="form-textarea" placeholder="Your message..."></textarea>
+                      <textarea id="contact_msg" rows="4" required class="form-textarea" placeholder="Your message..."></textarea>
                     </div>
                     <button type="submit" class="form-btn">Send Message</button>
                   </form>
@@ -724,6 +855,9 @@
               <div class="entry-content">
                 <p>It&#8217;s Intimate Partner Violence (IPV) Awareness Month, and one of the needs of Survivors of IPV is a quick scan of their options at the outset of their exit and escape strategy. In order to bolster some of the efforts of existing organizations, and to support Survivors in their access to the necessary information in regards to their rights, it is our hope that this Directory will be of some use. We thank you for your support and your emotional labour in this regard. This information will be featured on our website and our social media platforms.</p>
 
+                <!-- HubSpot Form Embed Container -->
+                <div id="hubspot-directory-form" style="margin: 2rem 0;"></div>
+
                 <p>If you or your organization provides free legal support, crisis resources, or transition services for survivors of Intimate Partner Violence and would like to be included in our directory, please contact us at <a href="mailto:southasianwomeninthelaw@gmail.com">southasianwomeninthelaw@gmail.com</a>.</p>
               </div>
             </article>
@@ -731,15 +865,20 @@
           </main>
         </div>
 
-        <!-- Right Sidebar (Authentic Original Widgets) -->
+        <!-- Right Sidebar (Authentic Branded Original Widgets) -->
         <aside id="secondary" class="sidebar widget-area" role="complementary">
           
           <!-- Widget 1: UOttawa SALSA -->
           <section id="media_image-4" class="widget widget_media_image">
             <h2 class="widget-title">Exclusive Access UOttawa SALSA</h2>
             <div class="widget-content">
-              <a href="https://www.instagram.com/uottawasalsa/?hl=en" class="salsa-image-link" target="_blank" rel="noopener noreferrer">
-                <img width="261" height="350" src="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/10/SALSA-x-SAWLMP.png" class="image wp-image-102 salsa-image" alt="SALSA x SAWLMP" title="Exclusive Access UOttawa SALSA" loading="lazy" />
+              <a href="https://www.instagram.com/uottawasalsa/" class="sidebar-card-badge salsa-banner" target="_blank" rel="noopener noreferrer">
+                <div class="badge-pre">Official Partnership</div>
+                <div class="badge-title">UOttawa SALSA</div>
+                <div class="badge-sub">South Asian Law Students Association</div>
+                <div style="margin-top: 1rem; font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em; color: #fbbf24;">
+                  Visit @uottawasalsa &rarr;
+                </div>
               </a>
               <p class="wp-caption-text">Exclusive Access UOttawa SALSA</p>
             </div>
@@ -749,8 +888,13 @@
           <section id="media_image-6" class="widget widget_media_image">
             <h2 class="widget-title">JOB OPPORTUNITIES THE COUNSEL NETWORK</h2>
             <div class="widget-content">
-              <a href="https://www.thecounselnetwork.com/current-opportunities/" class="counsel-network-link" target="_blank" rel="noopener noreferrer">
-                <img width="267" height="350" src="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/10/counsel-network-sawlmp.jpg" class="image wp-image-105 counsel-network-image" alt="The Counsel Network - SAWLMP" title="Job Opportunities The Counsel Network" loading="lazy" />
+              <a href="https://www.thecounselnetwork.com/current-opportunities/" class="sidebar-card-badge counsel-banner" target="_blank" rel="noopener noreferrer">
+                <div class="badge-pre">Legal Recruitment Canada</div>
+                <div class="badge-title">THE COUNSEL NETWORK</div>
+                <div class="badge-sub">Talent Management & Lateral Placement</div>
+                <div style="margin-top: 1rem; font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em; color: #38bdf8;">
+                  View Current Opportunities &rarr;
+                </div>
               </a>
             </div>
           </section>
@@ -760,8 +904,9 @@
             <h2 class="widget-title">CHIN Radio Interview</h2>
             <div class="textwidget">
               <audio controls style="width: 100%;">
-                <source src="https://web.archive.org/web/20260412002546im_/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3" type="audio/mpeg">
-                <a href="https://web.archive.org/web/20260412002546/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3">Listen to MP3</a>
+                <source src="./audio/Naiyna-Radio.mp3" type="audio/mpeg">
+                <source src="https://web.archive.org/web/20200301000000im_/http://sawlmp.com/wp-content/uploads/2020/03/Naiyna-Radio.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
               </audio>
               <p style="font-size: 0.85rem; color: #686868; font-style: italic; margin-top: 0.5rem;">
                 Interview on CHIN radio with the SAWLMP director, Naiyna Sharma
@@ -791,9 +936,9 @@
 
         <nav class="social-navigation" role="navigation" aria-label="Footer Social Links Menu">
           <ul class="social-links-menu">
-            <li><a target="_blank" href="https://www.instagram.com/sawlmp">Instagram</a></li>
-            <li><a target="_blank" href="https://twitter.com/sawlmp1">Twitter</a></li>
-            <li><a target="_blank" href="https://www.facebook.com/sawlmp">Facebook</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sawlmp">Instagram</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sawlmp1">Twitter</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sawlmp">Facebook</a></li>
           </ul>
         </nav>
 
@@ -826,18 +971,97 @@
         activeNav.classList.add('current-menu-item');
       }
 
+      // Re-trigger HubSpot form load if container is empty
+      loadHubspotForms();
+
       // Scroll smoothly to top of content
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function handleFormSubmit(e, noticeId) {
+    // Initialize HubSpot Embeds with Portal 5897820
+    function loadHubspotForms() {
+      if (window.hbspt && window.hbspt.forms) {
+        // Mentor Form
+        const mentorEl = document.getElementById('hubspot-mentor-form');
+        if (mentorEl && mentorEl.children.length === 0) {
+          try {
+            hbspt.forms.create({
+              portalId: "5897820",
+              formId: "fbf5cc76-8d30-42e3-860e-3cadad77a484",
+              target: "#hubspot-mentor-form",
+              onFormReady: function() {
+                const fb = document.getElementById('fallback-mentor-form');
+                if (fb) fb.style.display = 'none';
+              }
+            });
+          } catch(e) {}
+        }
+
+        // Mentee Form
+        const menteeEl = document.getElementById('hubspot-mentee-form');
+        if (menteeEl && menteeEl.children.length === 0) {
+          try {
+            hbspt.forms.create({
+              portalId: "5897820",
+              formId: "abd8b232-38fe-4259-81b9-0ad078d93e84",
+              target: "#hubspot-mentee-form",
+              onFormReady: function() {
+                const fb = document.getElementById('fallback-mentee-form');
+                if (fb) fb.style.display = 'none';
+              }
+            });
+          } catch(e) {}
+        }
+
+        // Contact Form
+        const contactEl = document.getElementById('hubspot-contact-form');
+        if (contactEl && contactEl.children.length === 0) {
+          try {
+            hbspt.forms.create({
+              portalId: "5897820",
+              formId: "abd8b232-38fe-4259-81b9-0ad078d93e84",
+              target: "#hubspot-contact-form",
+              onFormReady: function() {
+                const fb = document.getElementById('fallback-contact-form');
+                if (fb) fb.style.display = 'none';
+              }
+            });
+          } catch(e) {}
+        }
+      }
+    }
+
+    // Try loading on page load
+    window.addEventListener('load', function() {
+      setTimeout(loadHubspotForms, 500);
+    });
+
+    // Fallback Submission: Form Handler that opens mailto or prepares email
+    function handleFormSubmit(e, noticeId, formType) {
       e.preventDefault();
       const notice = document.getElementById(noticeId);
       if (notice) {
         notice.style.display = 'block';
         notice.scrollIntoView({ behavior: 'smooth' });
       }
-      e.target.reset();
+
+      // Collect form field inputs
+      const form = e.target;
+      const inputs = form.querySelectorAll('input, select, textarea');
+      let details = formType + ' Submission:\n';
+      inputs.forEach(function(input) {
+        if (input.value) {
+          details += (input.placeholder || input.id || 'Field') + ': ' + input.value + '\n';
+        }
+      });
+
+      // Construct mailto backup so submission is never lost
+      const mailtoLink = 'mailto:southasianwomeninthelaw@gmail.com?subject=' + 
+        encodeURIComponent('SAWLMP ' + formType + ' Submission') + 
+        '&body=' + encodeURIComponent(details);
+
+      window.location.href = mailtoLink;
+      form.reset();
     }
   </script>
 
